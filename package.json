@@ -1,0 +1,11 @@
+{
+  "name": "encrypt-it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Will Carpenter <dev.wtc3@gmail.com>",
+  "license": "ISC"
+}
