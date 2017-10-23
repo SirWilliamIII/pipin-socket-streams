@@ -1,21 +1,24 @@
 {
-  "name": "encrypt-it",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Will Carpenter <dev.wtc3@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2",
-    "moment": "^2.19.1",
-    "nodemon": "^1.12.1",
-    "socket.io": "^2.0.4"
-  },
-  "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.0"
-  }
+    "name": "encrypt-it",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon server/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Will Carpenter <dev.wtc3@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.2",
+        "fs": "0.0.1-security",
+        "moment": "^2.19.1",
+        "net": "^1.0.2",
+        "nodemon": "^1.12.1",
+        "socket.io": "^2.0.4"
+    },
+    "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-core": "^6.26.0"
+    }
 }
