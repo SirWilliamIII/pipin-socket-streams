@@ -1,0 +1,26 @@
+{
+    "vsicons.dontShowNewVersionMessage": true,
+    "vsicons.dontShowConfigManuallyChangedMessage": true,
+
+    // If set to true, the extension will restart automatically on project detection.
+    "vsicons.projectDetection.autoReload": true,
+
+    // If set to true, the extension will disable the project detection.
+    "vsicons.projectDetection.disableDetect": true,
+
+
+    // If set to true, the extension will use the official JS icon.
+    "vsicons.presets.jsOfficial": false,
+
+    // If set to true, the extension will use the official TS icon.
+    "vsicons.presets.tsOfficial": false,
+
+    // If set to true, the extension will use the official JSON icon.
+    "vsicons.presets.jsonOfficial": false,
+
+    // If set to true, all folders will be hidden.
+    "vsicons.presets.hideFolders": false,
+
+    // If set to true, all folders will have the default folder icon.
+    "vsicons.presets.foldersAllDefaultIcon": false,
+}

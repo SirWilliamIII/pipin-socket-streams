@@ -3,12 +3,17 @@ const server = require('net').createServer()
 let counter = 0
 let sockets = {}
 
-const port = 8888
+const port = 8000
 
 
 server.on('connection', socket => {
-    console.log('Client has connected')
 
+    socket.id = counter++
+    sockets[socket.id] = socket
+
+    socket.setEncoding('utf8')
+
+    console.log('Client has connected')
     socket.write('Welcome to the chat zone!')
  
     socket.on('data', data => {
