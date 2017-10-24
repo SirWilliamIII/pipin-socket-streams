@@ -1,7 +1,7 @@
 const net = require('net')
 
 const HOST = '0.0.0.0'
-const PORT = 8888
+const PORT = 4000
 
 net.createServer(socket => {
 

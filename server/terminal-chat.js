@@ -3,7 +3,7 @@ const server = require('net').createServer()
 let counter = 0
 let sockets = {}
 
-const port = 8000
+const port = 3333
 
 
 server.on('connection', socket => {
@@ -25,7 +25,9 @@ server.on('connection', socket => {
 })
 
 server.on('disconnect', () => {
-    delete sockets[socket.id]
+    delete sockets:{
+        [socket.id]
+    }
     console.log('Client disconnected')
 })
 
