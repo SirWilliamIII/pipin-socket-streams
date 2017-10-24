@@ -1,10 +1,25 @@
-const path = require('path'),
-    fs = require('fs'),
-    http = require('http'),
-    express = require('express'),
-    socketIO = require('socket.io')
+const net = require('net')
 
-const publicPath = path.join(__dirname, './../client/index.html')
-    app = express(),
-    server = http.createServer(app),
-    io = socketIO(server)
+const HOST = '0.0.0.0'
+const PORT = 8888
+
+net.createServer(socket => {
+
+	console.log(`Connected to ${socket.remoteAddress}: ${socket.remotePort} `)
+
+	socket.on('data', data => {
+
+		console.log(`Data: ${socket.remoteAddress} ${data}`)
+		
+		socket.write(data)
+	})
+
+	socket.on('close', data => {
+	
+		console.log(`Closed: ${socket.remoteAddress}`) 
+
+	})
+
+}).listen(PORT, HOST)
+
+console.log(`Server listening on port ${PORT}`)
